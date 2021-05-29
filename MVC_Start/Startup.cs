@@ -52,6 +52,7 @@ namespace MVC_Start
       app.UseMvc(routes =>
       {
         routes.MapRoute(
+            //set default path if user does not supply controller, action, or optional id (?=nullable)
             name: "default",
             template: "{controller=Home}/{action=Index}/{id?}");
       });
