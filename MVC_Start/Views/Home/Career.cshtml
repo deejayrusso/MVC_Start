@@ -1,0 +1,26 @@
+﻿@{
+    Layout = null;
+}
+
+@model GuestContact
+
+<p>Hello Customer</p>
+
+<form asp-controller="Home" asp-action="Career" method="post">
+    @*Get a text input field for specified items on the form*@
+    <p>Name: <input asp-for="Name" /></p>
+    <p>Job: <input asp-for="Job" /></p>
+    <p>Education: <input asp-for="Education" /></p>
+
+    @*Submits contents of form to Contact method in the Home controller*@
+    <button type="submit">Submit</button>
+</form>
+
+<p>
+
+</p>
+<a asp-controller="Home"
+   asp-action="Index"
+   asp-route-id="12">
+    Home page
+</a>

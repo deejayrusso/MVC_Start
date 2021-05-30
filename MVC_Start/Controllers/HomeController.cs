@@ -71,5 +71,15 @@ namespace MVC_Start.Controllers
 
       return View(Model);
     }
-  }
+        public IActionResult Career()
+        {
+            GuestContact career = new GuestContact();
+
+            career.Name = "Dominick Russo";
+            career.Job = "Analyst";
+            career.Education = "MS BAIS student";
+
+            return View(career);
+        }
+    }
 }
